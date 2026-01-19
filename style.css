@@ -228,8 +228,59 @@ main{
     color: rgba(128, 128, 128, 0.682);
 }
 
+/* Featured Episodes */
+.featured-Episodes{
+    padding: 7.5rem 12.5rem;
 
+}
+.featured-titel>h2{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.featured-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.video{
+    background-color: #38077992;
+    box-shadow: 10px 10px 50px #32056cb9;
+    border-radius: 39px;
+    position: relative;
+}
 
+.video>h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin:1.5rem ;
+}
+.video>p{
+    font-size: 1rem;
+    color: rgba(128, 128, 128, 0.593);
+    margin:0.5rem 1.5rem 1.5rem 1.5rem;
+
+}
+.iframe{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    justify-content: center;
+}
+.time{
+    color: #01ff88;
+    padding-left: 2.5rem;
+     position: absolute;
+}
+.time-1{
+    bottom: 10px;
+}
+.time-2{
+    bottom: 10px;
+}
+.time-3{
+    bottom: 10px;
+}
 
 @media screen and (max-width:576px) {
     /* navbar */
@@ -319,5 +370,33 @@ main{
     gap: 0.625rem;
     margin-top: 2.5rem;
     justify-items: center;
+    }
+    /* lay-out */
+    .Why-Choose-TechWave{
+    background-color: rgb(33, 8, 66);
+    padding: 7.5rem 0rem;
+    }
+    .layout-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "p p p p p p p p p p p p"
+    "m m m m m m m m m m m m" 
+    "g g g g g g g g g g g g"
+    "e e e e e e e e e e e e"
+    "r r r r r r r r r r r r";
+    gap: 1.875rem;
+    padding-top: 2.5rem;
+    padding-left: 0;
+    }
+    .featured-Episodes{
+    padding: 7.5rem 0.5rem;
+    }
+    .featured-titel>h2{
+    font-size: 1.5rem;
+    }
+    .featured-cards{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
     }
 }
