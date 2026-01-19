@@ -349,7 +349,7 @@ main{
 }
                                                         /* footer section */
 .div-logo{
-    background-image: url(/assets/footer-bg.png);
+    background-image: url("./assets/footer-bg.png");
     background-size: contain;
     height: 25.75rem;
     position: relative;
